@@ -1,4 +1,4 @@
-package com.example.customview.Practices
+package com.example.customview.Practices.draw
 
 import android.content.Context
 import android.graphics.Canvas
@@ -6,7 +6,11 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Path
 import android.util.AttributeSet
+import android.util.Log
 import android.view.View
+import com.example.customview.MainActivity
+import java.util.*
+import kotlin.collections.HashSet
 
 /**
  *Create by GWJ 2023/4/21 17:43
@@ -20,6 +24,10 @@ class PracticesDraw : View {
         defStyleAttr
     )
 
+    override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
+//        super.onMeasure(widthMeasureSpec, heightMeasureSpec)
+        setMeasuredDimension(MainActivity.mWidth, MainActivity.mHeight)
+    }
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
         //使用 canvas.drawColor() 方法把 View 涂成黄色
@@ -204,6 +212,7 @@ class PracticesDraw : View {
         paintPieRED.color = Color.RED
 
         val paintDis = Paint(Paint.ANTI_ALIAS_FLAG)
+        paintDis.textSize = 30f
 
         canvas?.drawArc(750f,1090f,950f,1300f,-90f,30f,true,paintPieGR)
         canvas?.drawArc(750f,1090f,950f,1300f,21f,-75f,true,paintPieGre)
