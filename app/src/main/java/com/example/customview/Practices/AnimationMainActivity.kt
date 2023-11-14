@@ -62,6 +62,6 @@ class AnimationMainActivity : AppCompatActivity() {
         pageModels.add(PageModel(R.string.title_duration, R.layout.practice_duration))
         pageModels.add(PageModel(R.string.title_interpolator, R.layout.practice_interpolator))
         pageModels.add(PageModel(R.string.title_object_animator, R.layout.practice_object_animator))
-//        pageModels.add(PageModel(R.string.title_layout_already,))
+        pageModels.add(PageModel(R.string.title_layout_already,R.layout.practice_layout_already))
     }
 }

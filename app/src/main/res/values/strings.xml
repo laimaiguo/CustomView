@@ -23,6 +23,10 @@
     <string name="animate">animate</string>
     <string name="title_object_animator_multi_float">ObjectAnimator.ofMultiFloat()</string>
     <string name="api_lower_than_21">API 21 及更高版本才支持这个，换个高版本的设备再试吧</string>
+    <string name="adjust_frame">外框调节</string>
+    <string name="width">宽度</string>
+    <string name="height">高度</string>
+    <string name="wh">宽高</string>
     <string-array name="interpolators">
         <item>AccelerateDecelerateInterpolator(加速再减速)</item>
         <item>LinearInterpolator(匀速)</item>
